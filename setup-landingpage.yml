@@ -1,13 +1,6 @@
 - name: Setup Landing Page
   hosts: landingpage
   become: yes
-  vars_files:
-    - dbsecret
-    #vars:
-    #db_name: db_landing_page
-    #db_username: landingpage
-    #db_password: Landing#Page123
-    #db_host: 34.66.224.116
   roles: 
     - update-os
     - landingpage
