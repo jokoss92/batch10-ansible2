@@ -14,7 +14,7 @@
   notify:
     - restart-mariadb
 
-- name: install mariadb
+- name: install python3-mysqldb
   apt: 
      name: python3-mysqldb
      state: present
