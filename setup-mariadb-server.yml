@@ -1,12 +1,8 @@
 - name: Setup MariaDB Server
-  hosts: database
+  hosts: all
   become: yes
   roles:
     - update-os
     - setup-mariadb
-      #vars:
-      #db_name: db_landing_page
-      #db_username: landingpage
-      #db_password: Landing#Page123
-  vars_files:
-    - dbsecret
+
+
