@@ -1,5 +1,5 @@
 - name: Setup Landing Page
-  hosts: landingpage
+  hosts: all
   become: yes
   roles: 
     - update-os
